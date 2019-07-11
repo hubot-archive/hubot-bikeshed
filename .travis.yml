@@ -1,6 +1,13 @@
 language: node_js
 node_js:
-  - "0.11"
-  - "0.10"
-notifications:
-  email: false
+- '10'
+tasks:
+- npm install
+- npm test
+deploy:
+  provider: npm
+  email: dlq8206@rit.edu
+  api_key:
+    secure: bgfI3QcW4fqSPVT4N3+mh38ZRWKEW2HASJS/R7X+7twiuKVIjrahVWn8GMogbJPcpBuy+cgpW0DQZows8f5jsf7LZzc/xaN/SF+QWVJDy0CCEky32k8uO3E5k0UQycXkb/OY8KWXJLCmW9Xue7T9vOpQMYCCppC4fEsrNPLxTXU=
+  on:
+    repo: hubot-scripts/hubot-bikeshed
